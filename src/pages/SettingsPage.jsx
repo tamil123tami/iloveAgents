@@ -12,6 +12,7 @@ import {
   getAvailableProviders,
 } from '../lib/globalKeys'
 import { useDocumentTitle } from '../lib/useDocumentTitle'
+import BackupRestore from '../components/BackupRestore'
 import openaiLogo   from '../assets/openai.svg'
 import anthropicLogo from '../assets/anthropic.svg'
 import geminiLogo    from '../assets/gemini.svg'
@@ -281,6 +282,8 @@ export default function SettingsPage() {
           )}
         </div>
       </section>
+
+      <BackupRestore />
 
       {/* ─────────────────────────────────────────── */}
       {/* SECTION 3 — Privacy                         */}
